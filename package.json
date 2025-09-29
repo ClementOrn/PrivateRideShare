@@ -1,0 +1,38 @@
+{
+  "name": "private-rideshare-dapp",
+  "version": "1.0.0",
+  "description": "Private Ride Share DApp with Fully Homomorphic Encryption",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -c-1 --cors",
+    "build": "echo 'Static site - no build required'",
+    "start": "npx http-server . -p 8080 -c-1 --cors",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.js --network sepolia",
+    "node": "npx hardhat node",
+    "clean": "npx hardhat clean"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "rideshare",
+    "privacy",
+    "fhe",
+    "zama"
+  ],
+  "author": "Anonymous",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@fhevm/solidity": "^0.5.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.8.0"
+  }
+}
